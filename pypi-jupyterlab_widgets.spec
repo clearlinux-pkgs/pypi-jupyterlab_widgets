@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_widgets
 Version  : 1.0.2
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/27/f1/0d3a09c0069467ed9636faf3a9b5b758378216bb891066a0bc24799681e3/jupyterlab_widgets-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/27/f1/0d3a09c0069467ed9636faf3a9b5b758378216bb891066a0bc24799681e3/jupyterlab_widgets-1.0.2.tar.gz
 Summary  : A JupyterLab extension.
@@ -14,11 +14,8 @@ Requires: pypi-jupyterlab_widgets-data = %{version}-%{release}
 Requires: pypi-jupyterlab_widgets-license = %{version}-%{release}
 Requires: pypi-jupyterlab_widgets-python = %{version}-%{release}
 Requires: pypi-jupyterlab_widgets-python3 = %{version}-%{release}
-Requires: jupyter-packaging
+Requires: pypi(jupyter_packaging)
 BuildRequires : buildreq-distutils3
-Provides: jupyterlab_widgets
-Provides: jupyterlab_widgets-python
-Provides: jupyterlab_widgets-python3
 BuildRequires : pypi(jupyter_packaging)
 BuildRequires : pypi(jupyterlab)
 BuildRequires : pypi(setuptools)
@@ -75,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641451072
+export SOURCE_DATE_EPOCH=1641846347
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
