@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_widgets
 Version  : 1.0.2
-Release  : 17
+Release  : 18
 URL      : https://files.pythonhosted.org/packages/27/f1/0d3a09c0069467ed9636faf3a9b5b758378216bb891066a0bc24799681e3/jupyterlab_widgets-1.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/27/f1/0d3a09c0069467ed9636faf3a9b5b758378216bb891066a0bc24799681e3/jupyterlab_widgets-1.0.2.tar.gz
 Summary  : A JupyterLab extension.
