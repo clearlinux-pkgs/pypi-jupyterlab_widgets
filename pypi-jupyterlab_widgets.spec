@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_widgets
 Version  : 3.0.2
-Release  : 21
+Release  : 22
 URL      : https://files.pythonhosted.org/packages/44/57/d0bce24977389bc2e768a33d394420f259bb52883ad347fcfff343363bb4/jupyterlab_widgets-3.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/44/57/d0bce24977389bc2e768a33d394420f259bb52883ad347fcfff343363bb4/jupyterlab_widgets-3.0.2.tar.gz
 Summary  : Jupyter interactive widgets for JupyterLab
