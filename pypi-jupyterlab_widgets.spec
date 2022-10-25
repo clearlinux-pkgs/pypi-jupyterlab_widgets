@@ -4,7 +4,7 @@
 #
 Name     : pypi-jupyterlab_widgets
 Version  : 3.0.3
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/19/99/66292214fa2f920ceec0a8a6f6d1844016e2e7a9b6c498bda380fa945015/jupyterlab_widgets-3.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/19/99/66292214fa2f920ceec0a8a6f6d1844016e2e7a9b6c498bda380fa945015/jupyterlab_widgets-3.0.3.tar.gz
 Summary  : Jupyter interactive widgets for JupyterLab
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1666713194
+export SOURCE_DATE_EPOCH=1666723540
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -83,8 +83,8 @@ export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
-export CFLAGS="$CFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 -msse2avx"
-export CXXFLAGS="$CXXFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 -msse2avx "
+export CFLAGS="$CFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
+export CXXFLAGS="$CXXFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
 export FFLAGS="$FFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
 export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
