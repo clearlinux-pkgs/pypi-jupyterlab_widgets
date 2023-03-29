@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-jupyterlab_widgets
-Version  : 3.0.6
-Release  : 33
-URL      : https://files.pythonhosted.org/packages/f0/d9/d4eadaaa98586ac417343f6aa9c1289d74bb5b2548e9602a84e8db479b31/jupyterlab_widgets-3.0.6.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f0/d9/d4eadaaa98586ac417343f6aa9c1289d74bb5b2548e9602a84e8db479b31/jupyterlab_widgets-3.0.6.tar.gz
+Version  : 3.0.7
+Release  : 34
+URL      : https://files.pythonhosted.org/packages/d4/68/ef3070afff437dc92562241294467112566d3b402d85bb9b32e3fd65352a/jupyterlab_widgets-3.0.7.tar.gz
+Source0  : https://files.pythonhosted.org/packages/d4/68/ef3070afff437dc92562241294467112566d3b402d85bb9b32e3fd65352a/jupyterlab_widgets-3.0.7.tar.gz
 Summary  : Jupyter interactive widgets for JupyterLab
 Group    : Development/Tools
 License  : BSD-3-Clause MIT
@@ -18,7 +18,6 @@ Requires: pypi-jupyterlab_widgets-python3 = %{version}-%{release}
 Requires: pypi(jupyter_packaging)
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(jupyter_packaging)
-BuildRequires : pypi(jupyterlab)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -63,10 +62,10 @@ python3 components for the pypi-jupyterlab_widgets package.
 
 
 %prep
-%setup -q -n jupyterlab_widgets-3.0.6
-cd %{_builddir}/jupyterlab_widgets-3.0.6
+%setup -q -n jupyterlab_widgets-3.0.7
+cd %{_builddir}/jupyterlab_widgets-3.0.7
 pushd ..
-cp -a jupyterlab_widgets-3.0.6 buildavx2
+cp -a jupyterlab_widgets-3.0.7 buildavx2
 popd
 
 %build
@@ -74,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679500492
+export SOURCE_DATE_EPOCH=1680103287
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -126,19 +125,19 @@ popd
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/plugin.json
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.270dbb43db912c1b3723.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.270dbb43db912c1b3723.js.LICENSE.txt
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/134.c61b95b04e00f8487eeb.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/150.267f129ae5fd6a33b390.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/134.402424ef4079078b2e0e.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/150.1a6d6a3a0542a41bec5a.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.0b98a9cbc7337e1749ed.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.0b98a9cbc7337e1749ed.js.LICENSE.txt
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/345.03be96cd091aac4797a5.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/495.12d9a2781dcfd9c75485.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/595.7f2125f3d2c7376588c2.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/596.47eb853beb85e18a3976.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/495.ea5e18a84b54f152ae61.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/595.b7741b41fd98f8f3d844.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/596.340cb969418e72309eb4.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/61.21f571face17e35076c2.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/644.7d1bff49f8e38fac4070.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/699.2ea6ecfcddb8f3bb4732.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/965.29aee187e7e01b410209.js
-/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/remoteEntry.c1170a4f6c4cb6582590.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/965.b0caf50c6bbde92efb37.js
+/usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/remoteEntry.35e76720037cafa02724.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/style.js
 /usr/share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/third-party-licenses.json
 
