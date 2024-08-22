@@ -1,5 +1,5 @@
 PKG_NAME := pypi-jupyterlab_widgets
-URL = https://files.pythonhosted.org/packages/2b/c9/413a845bfd3c7997b97c552a12fd54acccae891f53a13226bf42bdfd48b3/jupyterlab_widgets-3.0.11.tar.gz
+URL = https://files.pythonhosted.org/packages/ef/ba/20e06dd2771fe2e2c01492887ecdcabcbc24b5dd7d67b9f568d4c0361047/jupyterlab_widgets-3.0.12.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
